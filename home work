@@ -1,0 +1,27 @@
+let customer1  ="Nasirdin";
+let customer2  ="Askar";
+
+let price1 = 120;
+let quantity1 = 4;
+
+let price2 = 200;
+let quantity2 = 2;
+
+function compareCarts( customer1, customer2, price1, quantity1, price2, quantity2, num) {
+    let total1 = price1 * quantity1;
+    let total2 = price2 * quantity2;
+
+    if (total1 > total2) {
+    let differens = total1 - total2;
+    console.log(customer1 + " потратил больше чем " + customer2 + " на " + differens);
+    console.log(differens * num);
+
+    } else {
+        let differens = total1 - total2;
+         console.log(customer2 + " потратил больше чем " + customer1);
+         console.log(differens * num);
+    }
+}
+
+compareCarts(customer1, customer2, price1, quantity1, price2, quantity2, 20);
+
