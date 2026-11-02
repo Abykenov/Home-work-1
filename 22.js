@@ -1,0 +1,32 @@
+let student =[
+    {name: "Aibek", grade: 85},
+    {name: "Askar", grade: 90},
+    {name: "Aizirek", grade: 75},
+    {name: "Artem", grade: 93},
+    {name: "Kalyk", grade: 88},
+    {name: "Nursultan", grade: 75},
+    {name: "Emir", grade: 66},
+    {name: "Mari", grade: 70},
+    {name: "Mars", grade: 80},
+    {name: "Nurik", grade: 60},
+];
+
+for (let i = 0; i < student.length; i++) {
+    let g = student[i].grade;
+    let letter;
+
+    if (g >= 90) {
+        letter = 'A';
+    } else if (g >= 80) {
+        letter = 'B';
+    } else if (g >= 75) {
+        letter = 'C';
+    } else if (g >= 70) {
+        letter = 'D';
+    } else if (g >= 65) {
+        letter = 'E';
+    } else {
+        letter = 'F';
+    }
+    console.log(student[i].name + ": " + letter);
+}
